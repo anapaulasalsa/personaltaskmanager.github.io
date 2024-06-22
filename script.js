@@ -1,6 +1,6 @@
-$(function () {
+/*$(function () {
     $('.datetimepicker').datetimepicker(); //function to show calendar
-});
+});*/
 
 function addTaskButton(){ //click on add new task and show selectors inputs
     document.getElementById("addNewTask").style.display = "none";
@@ -22,7 +22,7 @@ function cancel(){     //cancel and stop creating one
     document.getElementById("sendButtons").style.display = "none";  
 }
 
-function clearInputField() {   //reset inputs, doesnt work yet
+function clearInputField() {   //reset inputs
     document.getElementById('titleTask').value = "";
     document.getElementById('pickupdate').value = "";
     document.getElementById('time-input').value = "";
@@ -41,7 +41,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
             animation: 50,
             draggable: '.card',
             onEnd: function (evt) {
-                // Log the container to which the item was moved
                 const movedToContainer = evt.to;
                 const movedItem = evt.item;
                 if(movedToContainer.id == 'done'){
@@ -50,8 +49,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 else{
                     movedItem.style.textDecoration = 'none';
                 }
-                console.log('Dragged element:', evt.item);
-                console.log('Moved to container:', movedToContainer.id || movedToContainer.className);
+                //console.log('Dragged element:', evt.item);
+                //console.log('Moved to container:', movedToContainer.id || movedToContainer.className);
             }
         });
     });
