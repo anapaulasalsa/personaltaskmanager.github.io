@@ -1,0 +1,55 @@
+#title {
+    padding:15px;
+    margin: 20px;
+}
+
+#addNewTask {
+    align-items: center;
+}
+#addTitle{
+    padding-top: 8px;
+}
+.typeInput{
+    padding-top: 8px;
+}
+#timeInput{
+    padding-top: 8px;
+}
+
+#demo{
+    color: "white";
+    size: 48px;
+}
+
+#taskToDo{
+    margin:auto;
+}
+
+/*
+#cardsContainer{
+    width: 50%; /* You can adjust this width as needed 
+    margin: auto ;
+    border: 1px solid black; /* Optional: for visual demonstration 
+    padding: 10px; /* Optional: for spacing inside the div 
+    align-items: center;
+}
+*/
+.card {
+    cursor: grab;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+.dropzone {
+    width: 24%;
+    min-height: 300px;
+    border: 1px dashed #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;   
+}
